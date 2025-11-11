@@ -1,0 +1,81 @@
+    :root {
+      --bg: %(bg)s;
+      --card: %(card)s;
+      --text: %(text)s;
+      --muted: %(muted)s;
+      --link: %(link)s;
+      --border: %(border)s;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: %(system_font)s;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: %(container_max_width)s;
+      margin: %(container_margin)s;
+      padding: %(container_padding)s;
+    }
+    header {
+      text-align: center;
+      margin-bottom: %(header_margin_bottom)s;
+    }
+    header h1 {
+      margin: %(header_h1_margin)s;
+      font-size: %(header_h1_font_size)s;
+      font-weight: 700;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: %(header_p_font_size)s;
+    }
+    ul.file-list {
+      list-style: none;
+      padding: 0;
+      margin: %(list_margin)s;
+    }
+    ul.file-list li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: %(list_item_border_radius)s;
+      padding: %(list_item_padding)s;
+      margin: %(list_item_margin)s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: box-shadow .15s ease, transform .05s ease;
+    }
+    ul.file-list li:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transform: translateY(-1px);
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .filename {
+      color: var(--muted);
+      font-family: %(mono_font)s;
+      font-size: %(filename_font_size)s;
+      margin-left: %(filename_margin_left)s;
+      white-space: nowrap;
+    }
+    .empty {
+      color: var(--muted);
+      background: var(--card);
+      border: 1px dashed var(--border);
+      border-radius: %(list_item_border_radius)s;
+      padding: %(list_item_padding)s;
+      text-align: center;
+      margin-top: %(header_margin_bottom)s;
+    }
