@@ -17,6 +17,7 @@ Directory `interactive/mechanics/` contains ready-to-open figures:
 | `net_force_vs_time_discrete.html` | Discrete net force vs time samples |
 | `net_force_vs_time_smooth.html` | Smoothed net force vs time curve |
 | `sinusoidal_position_vs_time_coarse_fine.html` | Comparing coarse vs fine sinusoidal sampling |
+| `stress_strain.html` | Stress vs Strain curve from sample data |
 
 ## Open a Figure (macOS)
 Double‑click an HTML file OR from the project root:
